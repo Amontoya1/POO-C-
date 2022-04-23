@@ -1,5 +1,6 @@
 ﻿using System;
 using JogoC.src.Entities;
+using JogoC.src.Entities.Helper;
 
 namespace JogoC
 {
@@ -11,6 +12,112 @@ namespace JogoC
             Wizard wizard = new Wizard("Jennica", 24, "Mage");
             Console.WriteLine(arus.Attack());
             Console.WriteLine(wizard.Attack(7));
+            
+            // int[] arrayInteiros = new int[3];
+            // arrayInteiros[0] = 10;
+            // arrayInteiros[1] = 20;
+            // arrayInteiros[2] = 30;
+
+            // System.Console.WriteLine("Percorrendo array pelo for");
+            // for (int i = 0; i < arrayInteiros.Length; i++)
+            // {
+            //     System.Console.WriteLine(arrayInteiros[i]);
+            // }
+
+            // System.Console.WriteLine("Percorrendo array pelo foreach");
+            // foreach (var item in arrayInteiros)
+            // {
+            //     System.Console.WriteLine(item);
+            // }
+
+        //     int[,] arrayInteiros = new int[3, 3]
+        //     {
+        //         {1, 2, 3},
+        //         {4, 5, 6},
+        //         {7, 8, 9}
+        //     };
+         
+        //  for (int i = 0; i < arrayInteiros.GetLength(0); i++)
+        //  {
+        //      for (int j = 0; j < arrayInteiros.GetLength(1); j++)
+        //      {
+        //          System.Console.WriteLine(arrayInteiros[i, j]);
+        //      }
+        //  }
+
+        OperacoesArray op = new OperacoesArray();
+        // int[] array = new int[5] { 3, 7, 2, 9, 5 };
+        // int[] arrayCopia = new int[10];
+        // string[] arrayString = op.CoverterParaArrayString(array);
+
+        // int valorProcurado = 7;
+
+        // System.Console.WriteLine("Capacidade Atual do Array: " + array.Length);
+
+        // op.RedimensionarArray(ref array, array.Length * 2);
+
+        // System.Console.WriteLine($"Capacidade Atual do Array Após de Redimensionar: " + array.Length);
+
+        // int indice = op.ObterIndice(array, valorProcurado);
+
+        // if (indice > -1)
+        // {
+        //     System.Console.WriteLine("Valor encontrado na posição: " + indice);
+        //     System.Console.WriteLine("O índice do elemento {0} é {1}", valorProcurado, indice);
+        // }
+        // else
+        // {
+        //     System.Console.WriteLine("Valor não encontrado");
+        // }
+
+        // int posicaoEncontrada = op.ObterValor(array, valorProcurado);
+        // if (posicaoEncontrada > 0)
+        // {
+        //     System.Console.WriteLine("Valor encontrado na posição: " + posicaoEncontrada);
+        // }
+        // else
+        // {
+        //     System.Console.WriteLine("Valor não encontrado");
+        // }
+
+        // bool todosMaiorQue = op.TodosMaiorQue(array, valorProcurado);
+         
+        //  if (todosMaiorQue)
+        //  {
+        //      System.Console.WriteLine("Todos os elementos são maiores que " + valorProcurado);
+        //  }
+        //  else
+        //  {
+        //      System.Console.WriteLine("Não todos os elementos são maiores que " + valorProcurado);
+        //  }
+
+        // bool existe = op.Existe(array, valorProcurado);
+
+        // if (existe)
+        // {
+        //     System.Console.WriteLine("Existe: {0}", valorProcurado);
+        // }
+        // else
+        // {
+        //     System.Console.WriteLine("Não existe: {0}", valorProcurado);
+        // }
+
+        // System.Console.WriteLine("Array antes da ordenação");
+        // op.ImprimirArray(array);
+        // op.OrdenarBubbleSort(ref array);
+       //  op.Ordenar(ref array);
+
+        // System.Console.WriteLine("Array depois da ordenação");
+        // op.ImprimirArray(array);
+
+        // System.Console.WriteLine("Array antes de la copia");
+        // op.ImprimirArray(array);
+
+        // op.Copiar(ref array, ref arrayCopia);
+
+        // System.Console.WriteLine("Array após a copia");
+        // op.ImprimirArray(arrayCopia);
+
         }
     }
 }
