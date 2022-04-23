@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using JogoC.src.Entities;
 using JogoC.src.Entities.Helper;
 
@@ -8,11 +9,33 @@ namespace JogoC
     {
         static void Main(string[] args)
         {
-            Knigth arus = new Knigth("Arus", 12, "Warrior");
-            Wizard wizard = new Wizard("Jennica", 24, "Mage");
-            Console.WriteLine(arus.Attack());
-            Console.WriteLine(wizard.Attack(7));
-            
+            // Knigth arus = new Knigth("Arus", 12, "Warrior");
+            // Wizard wizard = new Wizard("Jennica", 24, "Mage");
+            // Console.WriteLine(arus.Attack());
+            // Console.WriteLine(wizard.Attack(7));
+
+            OperacoesLista opLista = new OperacoesLista();
+            List<string> estados = new List<string> { "Acre", "Alagoas", "Amapá", "Amazonas", "Bahia", "Ceará", "Distrito Federal", "Goiás", "Maranhão", "Mato Grosso", "Mato Grosso do Sul", "Pará", "Paraíba", "Paraná", "Pernambuco", "Piauí", "Rio Grande do Norte", "Rio Grande do Sul", "Rondônia", "Roraima", "Santa Catarina", "Sergipe", "Tocantins" };
+            string[] estadosArray = new string[4] { "Rio de Janeiro", "São Paulo", "Minas Gerais", "Espirito Santo" };
+            // estados.Add("Acre");
+            // estados.Add("Alagoas");
+            // estados.Add("Amapá");
+            // estados.Add("Amazonas");
+            // estados.Add("Bahia");
+            System.Console.WriteLine($"Quantidade de elementos na lista: {estados.Count}");
+
+            // estados.AddRange(estadosArray);
+            estados.Insert(0, "Rio de Janeiro");
+
+            opLista.ImprimirListaString(estados);
+
+            System.Console.WriteLine("Removendo o elemento da posição 2");
+
+            estados.RemoveAt(2);
+
+            System.Console.WriteLine($"Quantidade de elementos na lista remove: {estados.Count}");
+          
+
             // int[] arrayInteiros = new int[3];
             // arrayInteiros[0] = 10;
             // arrayInteiros[1] = 20;
