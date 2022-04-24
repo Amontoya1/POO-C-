@@ -14,26 +14,40 @@ namespace JogoC
             // Console.WriteLine(arus.Attack());
             // Console.WriteLine(wizard.Attack(7));
 
-            OperacoesLista opLista = new OperacoesLista();
-            List<string> estados = new List<string> { "Acre", "Alagoas", "Amapá", "Amazonas", "Bahia", "Ceará", "Distrito Federal", "Goiás", "Maranhão", "Mato Grosso", "Mato Grosso do Sul", "Pará", "Paraíba", "Paraná", "Pernambuco", "Piauí", "Rio Grande do Norte", "Rio Grande do Sul", "Rondônia", "Roraima", "Santa Catarina", "Sergipe", "Tocantins" };
-            string[] estadosArray = new string[4] { "Rio de Janeiro", "São Paulo", "Minas Gerais", "Espirito Santo" };
-            // estados.Add("Acre");
-            // estados.Add("Alagoas");
-            // estados.Add("Amapá");
-            // estados.Add("Amazonas");
-            // estados.Add("Bahia");
-            System.Console.WriteLine($"Quantidade de elementos na lista: {estados.Count}");
+            Queue<string> queue = new Queue<string>();
+            queue.Enqueue("Arus");
+            queue.Enqueue("Jennica");
+            queue.Enqueue("Andrés");
 
-            // estados.AddRange(estadosArray);
-            estados.Insert(0, "Rio de Janeiro");
+            Console.WriteLine($"Pessoas na fila: {queue.Count}");
 
-            opLista.ImprimirListaString(estados);
+           while (queue.Count > 0)
+           {
+               Console.WriteLine($"Vez de : {queue.Peek()}");
+               Console.WriteLine($"{queue.Dequeue()} saiu da fila");
+           }
 
-            System.Console.WriteLine("Removendo o elemento da posição 2");
 
-            estados.RemoveAt(2);
+            // OperacoesLista opLista = new OperacoesLista();
+            // List<string> estados = new List<string> { "Acre", "Alagoas", "Amapá", "Amazonas", "Bahia", "Ceará", "Distrito Federal", "Goiás", "Maranhão", "Mato Grosso", "Mato Grosso do Sul", "Pará", "Paraíba", "Paraná", "Pernambuco", "Piauí", "Rio Grande do Norte", "Rio Grande do Sul", "Rondônia", "Roraima", "Santa Catarina", "Sergipe", "Tocantins" };
+            // string[] estadosArray = new string[4] { "Rio de Janeiro", "São Paulo", "Minas Gerais", "Espirito Santo" };
+            // // estados.Add("Acre");
+            // // estados.Add("Alagoas");
+            // // estados.Add("Amapá");
+            // // estados.Add("Amazonas");
+            // // estados.Add("Bahia");
+            // System.Console.WriteLine($"Quantidade de elementos na lista: {estados.Count}");
 
-            System.Console.WriteLine($"Quantidade de elementos na lista remove: {estados.Count}");
+            // // estados.AddRange(estadosArray);
+            // estados.Insert(0, "Rio de Janeiro");
+
+            // opLista.ImprimirListaString(estados);
+
+            // System.Console.WriteLine("Removendo o elemento da posição 2");
+
+            // estados.RemoveAt(2);
+
+            // System.Console.WriteLine($"Quantidade de elementos na lista remove: {estados.Count}");
           
 
             // int[] arrayInteiros = new int[3];
