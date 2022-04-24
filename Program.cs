@@ -14,18 +14,34 @@ namespace JogoC
             // Console.WriteLine(arus.Attack());
             // Console.WriteLine(wizard.Attack(7));
 
-            Queue<string> queue = new Queue<string>();
-            queue.Enqueue("Arus");
-            queue.Enqueue("Jennica");
-            queue.Enqueue("Andrés");
+            Stack<string> stack = new Stack<string>();
+            stack.Push("First");
+            stack.Push("Second");
+            stack.Push("Third");
+            stack.Push("Fourth");
+            stack.Push("Fifth");
 
-            Console.WriteLine($"Pessoas na fila: {queue.Count}");
+            System.Console.WriteLine($"Stack size: {stack.Count}");
 
-           while (queue.Count > 0)
-           {
-               Console.WriteLine($"Vez de : {queue.Peek()}");
-               Console.WriteLine($"{queue.Dequeue()} saiu da fila");
-           }
+            while (stack.Count > 0)
+            {
+                Console.WriteLine($"Proximo lugar em a pilha para ensinar: {stack.Peek()}");
+                Console.WriteLine($"Proximo elemento: {stack.Pop()}");
+            }
+              System.Console.WriteLine($"Stack size ao final: {stack.Count}");
+          
+        //     Queue<string> queue = new Queue<string>();
+        //     queue.Enqueue("Arus");
+        //     queue.Enqueue("Jennica");
+        //     queue.Enqueue("Andrés");
+
+        //     Console.WriteLine($"Pessoas na fila: {queue.Count}");
+
+        //    while (queue.Count > 0)
+        //    {
+        //        Console.WriteLine($"Vez de : {queue.Peek()}");
+        //        Console.WriteLine($"{queue.Dequeue()} saiu da fila");
+        //    }
 
 
             // OperacoesLista opLista = new OperacoesLista();
