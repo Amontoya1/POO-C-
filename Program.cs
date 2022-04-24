@@ -14,21 +14,56 @@ namespace JogoC
             // Console.WriteLine(arus.Attack());
             // Console.WriteLine(wizard.Attack(7));
 
-            Stack<string> stack = new Stack<string>();
-            stack.Push("First");
-            stack.Push("Second");
-            stack.Push("Third");
-            stack.Push("Fourth");
-            stack.Push("Fifth");
+            Dictionary<string, string> color = new Dictionary<string, string>();
+            color.Add("red", "Red");
+            color.Add("blue", "Blue");
+            color.Add("green", "Green");
+            color.Add("yellow", "Yellow");
+            color.Add("black", "Black");
+            color.Add("white", "White");
 
-            System.Console.WriteLine($"Stack size: {stack.Count}");
-
-            while (stack.Count > 0)
+            foreach (KeyValuePair<string, string>  item in color)
             {
-                Console.WriteLine($"Proximo lugar em a pilha para ensinar: {stack.Peek()}");
-                Console.WriteLine($"Proximo elemento: {stack.Pop()}");
+                Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
             }
-              System.Console.WriteLine($"Stack size ao final: {stack.Count}");
+
+            string value = color["red"];
+            System.Console.WriteLine("Value Original: ");
+            Console.WriteLine(value);
+
+            value = color["blue"];
+             Console.WriteLine(value);
+
+            // while (true)
+            // {
+            //     Console.WriteLine("Choose a color: ");
+            //     string colorName = Console.ReadLine();
+            //     if (color.ContainsKey(colorName))
+            //     {
+            //         Console.WriteLine(color[colorName]);
+            //     }
+            //     else
+            //     {
+            //         Console.WriteLine("Color not found");
+            //     }
+            // }
+
+        
+            // Stack<string> stack = new Stack<string>();
+            // stack.Push("First");
+            // stack.Push("Second");
+            // stack.Push("Third");
+            // stack.Push("Fourth");
+            // stack.Push("Fifth");
+
+            // System.Console.WriteLine($"Stack size: {stack.Count}");
+
+            // while (stack.Count > 0)
+            // {
+            //     Console.WriteLine($"Proximo lugar em a pilha para ensinar: {stack.Peek()}");
+            //     Console.WriteLine($"Proximo elemento: {stack.Pop()}");
+            // }
+            //   System.Console.WriteLine($"Stack size ao final: {stack.Count}");
           
         //     Queue<string> queue = new Queue<string>();
         //     queue.Enqueue("Arus");
